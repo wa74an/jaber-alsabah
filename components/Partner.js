@@ -56,7 +56,7 @@ export default function Partner() {
           className="inline-block font-mono-label px-8 py-4 border transition-all duration-300 hover:bg-[#E8005A] hover:border-[#E8005A] hover:text-white"
           style={{ borderColor: 'var(--pink)', color: 'var(--pink)' }}
         >
-          Get in touch — {management.contact}
+          Get in touch
         </motion.a>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mt-20">

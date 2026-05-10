@@ -46,18 +46,16 @@ export default function Partner() {
           Open to commercial partnerships, sponsorship, and brand collaborations across the 2026 season and beyond.
         </motion.p>
 
-        <motion.a
-          href={`mailto:${management.contact}?subject=Partnership%20Enquiry%20—%20Jaber%20AlSabah`}
-          data-hover
+        <motion.span
           initial={{ opacity: 0, y: 14 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.35 }}
-          className="inline-block font-mono-label px-8 py-4 border transition-all duration-300 hover:bg-[#E8005A] hover:border-[#E8005A] hover:text-white"
+          className="inline-block font-mono-label px-8 py-4 border"
           style={{ borderColor: 'var(--pink)', color: 'var(--pink)' }}
         >
           Get in touch
-        </motion.a>
+        </motion.span>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mt-20">
           {[0, 1, 2].map((i) => (

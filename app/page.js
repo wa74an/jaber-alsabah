@@ -7,6 +7,7 @@ import About from '../components/About';
 import Results from '../components/Results';
 import Gallery from '../components/Gallery';
 import Video from '../components/Video';
+import Partner from '../components/Partner';
 import Footer from '../components/Footer';
 
 export default function Page() {
@@ -42,6 +43,7 @@ export default function Page() {
       <Results />
       <Gallery />
       <Video />
+      <Partner />
       <Footer />
     </main>
   );

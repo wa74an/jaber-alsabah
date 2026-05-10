@@ -7,7 +7,7 @@ const links = [
   { href: '#about', label: 'About' },
   { href: '#results', label: 'Results' },
   { href: '#gallery', label: 'Gallery' },
-  { href: '#video', label: 'Contact' },
+  { href: '#partner', label: 'Partner' },
 ];
 
 export default function Nav() {

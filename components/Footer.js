@@ -33,10 +33,15 @@ export default function Footer() {
           target="_blank"
           rel="noreferrer"
           data-hover
-          className="font-mono-label md:text-right hover:text-[#E8005A] transition-colors"
-          style={{ color: 'var(--grey-steel)' }}
+          className="flex items-center gap-2 md:justify-end hover:opacity-100 transition-opacity"
+          style={{ color: 'var(--grey-steel)', opacity: 0.7 }}
         >
-          Built by Beult
+          <span className="font-mono-label">Built by</span>
+          <img
+            src="/images/beult.png"
+            alt="Beult"
+            className="h-4 w-auto object-contain"
+          />
         </a>
       </div>
     </footer>

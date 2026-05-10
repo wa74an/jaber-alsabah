@@ -1,0 +1,44 @@
+'use client';
+import { driver, management } from '../data/content';
+
+export default function Footer() {
+  return (
+    <footer className="relative">
+      <div className="h-px w-full" style={{ background: 'var(--pink)' }} />
+      <div className="max-w-[1600px] mx-auto px-6 md:px-12 py-10 grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+        <p className="font-mono-label" style={{ color: 'var(--grey-steel)' }}>
+          © 2026 {driver.name}
+        </p>
+
+        <div className="flex justify-start md:justify-center">
+          <a
+            href={driver.instagram}
+            target="_blank"
+            rel="noreferrer"
+            data-hover
+            aria-label="Instagram"
+            className="w-11 h-11 flex items-center justify-center border transition-colors hover:bg-[#E8005A] hover:border-[#E8005A]"
+            style={{ borderColor: 'rgba(200,212,232,0.2)' }}
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" />
+            </svg>
+          </a>
+        </div>
+
+        <a
+          href={management.url}
+          target="_blank"
+          rel="noreferrer"
+          data-hover
+          className="font-mono-label md:text-right hover:text-[#E8005A] transition-colors"
+          style={{ color: 'var(--grey-steel)' }}
+        >
+          Built by Beult
+        </a>
+      </div>
+    </footer>
+  );
+}

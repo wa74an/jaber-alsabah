@@ -5,7 +5,7 @@ export const driver = {
   firstName: 'JABER',
   lastName: 'ALSABAH',
   initials: 'JAS',
-  monogram: 'JS',
+  monogram: 'JAS',
   carNumber: '83',
   nationality: 'Kuwaiti',
   team: 'Xcel Motorsport',

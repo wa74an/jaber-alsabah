@@ -35,16 +35,21 @@ export default function Hero() {
   return (
     <section className="relative w-full h-screen min-h-[700px] overflow-hidden">
       <div className="absolute inset-0">
-        <img
-          src="/images/ontrack.jpg"
-          alt=""
+        <video
+          src="/images/hero.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          poster="/images/ontrack.jpg"
           className="w-full h-full object-cover"
         />
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              'linear-gradient(180deg, rgba(6,13,31,0.55) 0%, rgba(6,13,31,0.7) 60%, rgba(6,13,31,0.95) 100%)',
+              'linear-gradient(180deg, rgba(6,13,31,0.35) 0%, rgba(6,13,31,0.55) 70%, rgba(6,13,31,0.95) 100%)',
           }}
         />
       </div>
@@ -115,12 +120,6 @@ export default function Hero() {
           <p className="text-base md:text-lg max-w-xl" style={{ color: 'var(--grey-light)' }}>
             {tagline}
           </p>
-          <span
-            className="font-mono-label px-3 py-1.5 border"
-            style={{ borderColor: 'var(--pink)', color: 'var(--pink)' }}
-          >
-            2026 Rookie P1
-          </span>
         </motion.div>
       </div>
 

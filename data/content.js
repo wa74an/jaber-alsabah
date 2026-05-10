@@ -19,7 +19,7 @@ export const driver = {
 export const bio =
   "Jaber AlSabah is a Kuwaiti driver competing in the Wera Tools F4 British Championship with Xcel Motorsport — one of the UK's leading single-seater development teams. Having come through Xcel's karting programme, Jaber's transition into Formula 4 has been a natural progression, marked by racecraft, composure under pressure, and a relentless drive to improve. His rookie season in British F4 is built on a simple foundation: learn fast, push hard, and deliver.";
 
-export const tagline = "Rookie P1. Formula 4. Kuwait's next in line.";
+export const tagline = "Formula 4. Kuwait's next in line.";
 
 export const tags = ['Xcel Motorsport', 'F4 British Championship', '#83', 'Kuwait'];
 

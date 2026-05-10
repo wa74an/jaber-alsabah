@@ -12,7 +12,7 @@ const wipe = {
 
 export default function About() {
   return (
-    <section id="about" className="relative py-32 md:py-44 overflow-hidden">
+    <section id="about" className="relative py-20 md:py-44 overflow-hidden">
       <div className="max-w-[1600px] mx-auto px-6 md:px-12">
         <motion.div
           initial={{ opacity: 0, x: -10 }}
@@ -82,7 +82,7 @@ export default function About() {
             <img
               src="/images/garage.jpg"
               alt="Jaber AlSabah in garage"
-              className="w-full h-[60vh] md:h-[80vh] object-cover"
+              className="w-full h-[55vh] md:h-[80vh] object-cover"
             />
             <div
               className="absolute -bottom-4 -right-4 w-full h-full pointer-events-none"

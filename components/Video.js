@@ -6,7 +6,7 @@ export default function Video() {
   return (
     <section
       id="video"
-      className="relative py-32 md:py-44 overflow-hidden"
+      className="relative py-20 md:py-44 overflow-hidden"
       style={{ background: 'var(--blue-mid)' }}
     >
       <div className="max-w-[1200px] mx-auto px-6 md:px-12">

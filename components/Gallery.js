@@ -4,8 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { gallery } from '../data/content';
 
 const spanClass = {
-  tall: 'md:row-span-2',
-  wide: 'md:col-span-2',
+  tall: 'row-span-2',
+  wide: 'col-span-2',
   normal: '',
 };
 
@@ -60,7 +60,7 @@ export default function Gallery() {
     <section
       id="gallery"
       ref={sectionRef}
-      className="relative py-32 md:py-44 overflow-hidden"
+      className="relative py-20 md:py-44 overflow-hidden"
     >
       <div className="max-w-[1600px] mx-auto px-6 md:px-12">
         <motion.div
@@ -83,10 +83,7 @@ export default function Gallery() {
           ON / <span style={{ color: 'var(--pink)' }}>TRACK</span>
         </h2>
 
-        <div
-          className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6"
-          style={{ gridAutoRows: '260px' }}
-        >
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6 md:[grid-auto-rows:260px] [grid-auto-rows:180px]">
           {gallery.map((g, i) => (
             <motion.button
               key={g.src}

@@ -6,7 +6,7 @@ export default function Partner() {
   return (
     <section
       id="partner"
-      className="relative py-32 md:py-44 overflow-hidden"
+      className="relative py-20 md:py-44 overflow-hidden"
     >
       <div className="max-w-[1200px] mx-auto px-6 md:px-12 text-center">
         <motion.div

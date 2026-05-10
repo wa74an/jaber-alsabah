@@ -15,7 +15,7 @@ export default function Results() {
   return (
     <section
       id="results"
-      className="relative py-32 md:py-44 overflow-hidden"
+      className="relative py-20 md:py-44 overflow-hidden"
       style={{ background: 'var(--blue-mid)' }}
     >
       <div
@@ -63,41 +63,55 @@ export default function Results() {
               viewport={{ once: true, margin: '-80px' }}
               variants={wipe}
               data-hover
-              className="group relative grid grid-cols-12 gap-4 md:gap-8 items-center py-8 md:py-10 border-b transition-colors hover:bg-white/[0.02]"
+              className="group relative grid grid-cols-12 gap-3 md:gap-8 items-start md:items-center py-7 md:py-10 border-b transition-colors hover:bg-white/[0.02]"
               style={{
                 borderColor: 'rgba(200,212,232,0.08)',
                 borderLeft: r.highlight ? '3px solid var(--pink)' : '3px solid transparent',
-                paddingLeft: r.highlight ? '1.5rem' : '0',
+                paddingLeft: r.highlight ? '1rem' : '0',
               }}
             >
-              <div className="col-span-3 md:col-span-2">
+              <div className="col-span-4 md:col-span-2">
                 <div
                   className="font-display leading-none"
                   style={{
-                    fontSize: 'clamp(2.5rem, 6vw, 5.5rem)',
+                    fontSize: 'clamp(2.75rem, 9vw, 5.5rem)',
                     color: r.highlight ? 'var(--pink)' : 'var(--white)',
                   }}
                 >
                   {r.position}
                 </div>
-                <div className="font-mono-label mt-2" style={{ color: 'var(--grey-steel)' }}>
+                <div
+                  className="font-mono-label mt-2"
+                  style={{ color: 'var(--grey-steel)', fontSize: '0.65rem' }}
+                >
                   {r.label}
                 </div>
               </div>
 
-              <div className="col-span-9 md:col-span-8">
+              <div className="col-span-8 md:col-span-8">
                 <div
                   className="font-display tracking-wide mb-2"
-                  style={{ fontSize: 'clamp(1.25rem, 2.5vw, 2rem)', fontWeight: 700 }}
+                  style={{ fontSize: 'clamp(1.05rem, 2.5vw, 2rem)', fontWeight: 700 }}
                 >
                   {r.event}
                 </div>
-                <div className="text-sm md:text-base" style={{ color: 'var(--grey-light)' }}>
+                <div
+                  className="leading-snug"
+                  style={{ color: 'var(--grey-light)', fontSize: 'clamp(0.8rem, 1.6vw, 1rem)' }}
+                >
                   {r.detail}
                 </div>
+                {r.badge && (
+                  <span
+                    className="md:hidden inline-block font-mono-label px-2.5 py-1 border mt-3"
+                    style={{ borderColor: 'var(--pink)', color: 'var(--pink)', fontSize: '0.6rem' }}
+                  >
+                    {r.badge}
+                  </span>
+                )}
               </div>
 
-              <div className="col-span-12 md:col-span-2 flex md:justify-end">
+              <div className="hidden md:flex col-span-2 justify-end">
                 {r.badge && (
                   <span
                     className="font-mono-label px-3 py-1.5 border"

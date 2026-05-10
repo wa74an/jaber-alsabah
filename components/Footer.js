@@ -5,12 +5,12 @@ export default function Footer() {
   return (
     <footer className="relative">
       <div className="h-px w-full" style={{ background: 'var(--pink)' }} />
-      <div className="max-w-[1600px] mx-auto px-6 md:px-12 py-10 grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+      <div className="max-w-[1600px] mx-auto px-6 md:px-12 py-8 md:py-10 grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6 items-center text-center md:text-left">
         <p className="font-mono-label" style={{ color: 'var(--grey-steel)' }}>
           © 2026 {driver.name}
         </p>
 
-        <div className="flex justify-start md:justify-center">
+        <div className="flex justify-center">
           <a
             href={driver.instagram}
             target="_blank"
@@ -33,7 +33,7 @@ export default function Footer() {
           target="_blank"
           rel="noreferrer"
           data-hover
-          className="flex items-center gap-2 md:justify-end hover:opacity-100 transition-opacity"
+          className="flex items-center justify-center md:justify-end gap-2 hover:opacity-100 transition-opacity"
           style={{ color: 'var(--grey-steel)', opacity: 0.7 }}
         >
           <span className="font-mono-label">Built by</span>

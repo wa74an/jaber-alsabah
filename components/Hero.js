@@ -33,7 +33,7 @@ function SplitText({ text, baseDelay = 0 }) {
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-screen min-h-[700px] overflow-hidden">
+    <section className="relative w-full min-h-[100svh] h-screen overflow-hidden">
       <div className="absolute inset-0">
         <video
           src="/images/hero.mp4"
@@ -93,7 +93,7 @@ export default function Hero() {
 
         <h1
           className="font-display leading-[0.85] tracking-tight"
-          style={{ fontSize: 'clamp(4rem, 14vw, 16rem)' }}
+          style={{ fontSize: 'clamp(3.5rem, 14vw, 16rem)' }}
         >
           <span className="block">
             <SplitText text={driver.firstName} />
@@ -128,7 +128,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2.2, duration: 0.8 }}
-        className="absolute bottom-10 right-6 md:right-12 flex flex-col items-center gap-3"
+        className="hidden sm:flex absolute bottom-10 right-6 md:right-12 flex-col items-center gap-3"
       >
         <span
           className="font-mono-label"
